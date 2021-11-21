@@ -1,4 +1,4 @@
-# discordbasebot
+# DiscordBaseBot
 estrutura básica que fiz pra qualquer aplicação que eu for fazer em discord.js
 
 :computer: Para instalar as dependências execute:
