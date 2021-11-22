@@ -1,7 +1,7 @@
 import { Message } from "discord.js";
 import Command from "./interface/command";
 import { verifyArgs, returnArgs, refineMessage, isHelp, usage } from "./util/utils";
-import { botSettings } from "../../../config.json";
+
 
 export default class Hello implements Command {
     name = "hi";

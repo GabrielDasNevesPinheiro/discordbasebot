@@ -1,4 +1,6 @@
-import { botSettings } from "../../../../config.json";
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 export function verifyArgs (msg: string): boolean { // verifica se há argumentos
 
@@ -11,7 +13,7 @@ export function returnArgs (msg: string): string[] { // retorna string tratada e
 }
 
 export function refineMessage (msg: string): string { // retorna uma string tratada
-    return msg.replace(botSettings.prefix, '').toLowerCase();
+    return msg.replace(process.env.PREFIX, '').toLowerCase();
 }
 
 export function isHelp(text: string): boolean {
@@ -19,5 +21,5 @@ export function isHelp(text: string): boolean {
 }
 
 export function usage(cmdname: string, helptext: string): string {
-    return `use: ${botSettings.prefix}${cmdname} ${helptext}`;
+    return `use: ${process.env.PREFIX}${cmdname} ${helptext}`;
 }

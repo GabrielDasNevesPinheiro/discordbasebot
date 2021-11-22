@@ -1,7 +1,9 @@
 import { Client, Message } from "discord.js";
 import User from "./user";
-import { botSettings } from "../../../config.json";
 import CommandList  from '../commands/util/commandList';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 
 export default class Bot extends User {
@@ -32,7 +34,7 @@ export default class Bot extends User {
         // calma que vamos mudar isso
         const refined = msg.content.split(" ")[0].toLowerCase();
         if (
-          msg.author.id != this.client.user.id && refined.startsWith(botSettings.prefix)) {
+          msg.author.id != this.client.user.id && refined.startsWith(process.env.PREFIX)) {
           this.commandHandle(msg, refined.replace("!", ""));
         }
       });
