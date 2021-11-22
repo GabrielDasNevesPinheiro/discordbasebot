@@ -44,8 +44,9 @@ export default class Bot extends User {
     }
   }
 
-  private async commandHandle(msg: Message, command: string) {
+  private commandHandle(msg: Message, command: string) {
         CommandList.comandos.forEach((com) => {
+          Bot.guilds = this.calculateGuilds(); // updating guild count
             if (com.name === command) {
                 com.invoke(msg);
             }
