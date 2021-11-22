@@ -8,7 +8,7 @@ dotenv.config();
 
 export default class Bot extends User {
   client: Client;//atributos da classe Bot
-  guilds: number;
+  static guilds: number;
 
   constructor(client: Client) { // construtor
     super();
@@ -27,7 +27,7 @@ export default class Bot extends User {
         // Setando atributos
         this.setId(Number(this.client.user.id));
         this.setName(this.client.user.username);
-        this.guilds = this.calculateGuilds();
+        Bot.guilds = this.calculateGuilds();
       });
 
       this.client.on("messageCreate", (msg) => {
