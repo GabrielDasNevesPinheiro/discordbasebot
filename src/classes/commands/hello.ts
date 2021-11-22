@@ -12,9 +12,15 @@ export default class Hello implements Command {
         const msg = refineMessage (message.content); // tratando mensagem
 
         if(!verifyArgs(msg)) {
-            await message.reply("EAE PAPAI DALE");    
-        } else if (isHelp(returnArgs(msg)[1])) {
+
+            await message.reply("EAE PAPAI DALE");  
+            return;
+
+        } 
+        if (isHelp(returnArgs(msg)[1])) {
+            
             await message.reply(this.help());
+
         }
         
     }

@@ -3,11 +3,5 @@
     "angularCompilerOptions": {
       "strictNullChecks": false,
       
-    },
-    "compilerOptions": {
-      "resolveJsonModule": true,
-    },
-    "files" : [
-      "config.json",
-    ]
+    }
   }
