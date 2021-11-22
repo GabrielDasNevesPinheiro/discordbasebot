@@ -11,7 +11,7 @@ npm install
 yarn add
 ```
 
-no arquivo ``` config.json ``` você altera o token da aplicação junto ao prefixo.
+no arquivo ``` .ENV ``` você altera o token da aplicação junto ao prefixo.
 
 :computer: Para executar:
 ```javascript
