@@ -15,9 +15,9 @@ no arquivo ``` .ENV ``` você altera o token da aplicação junto ao prefixo.
 
 :computer: Para executar:
 ```javascript
-yarn dev
+yarn start
 //or
-npm run dev
+npm run start
 ```
 
 
