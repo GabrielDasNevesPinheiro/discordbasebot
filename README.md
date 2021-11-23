@@ -8,7 +8,7 @@ estrutura básica que fiz pra qualquer aplicação que eu fizer em discord.js
 ```javascript
 npm install
 //or
-yarn add
+yarn
 ```
 
 no arquivo ``` .ENV ``` você altera o token da aplicação junto ao prefixo.
