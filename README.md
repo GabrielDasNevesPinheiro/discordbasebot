@@ -1,5 +1,5 @@
 # DiscordBaseBot :robot:
-estrutura básica que fiz pra qualquer aplicação que eu for fazer em discord.js
+estrutura básica que fiz pra qualquer aplicação que eu fizer em discord.js
 
 
 
