@@ -11,7 +11,11 @@ npm install
 yarn
 ```
 
-no arquivo ``` .ENV ``` você altera o token da aplicação junto ao prefixo.
+no arquivo ``` .ENV ``` você altera o token da aplicação junto ao prefixo:
+```env
+TOKEN=
+PREFIX=
+```
 
 :computer: Para executar:
 ```javascript
